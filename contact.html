@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 180px auto;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+
+        }
+
+        .contact-container h1 {
+            text-align: center;
+            color: #2ecc71;
+        }
+        .contact-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #2ecc71;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2ecc71;
+            box-shadow: 0 0 5px rgba(102, 233, 194, 0.5);
+        }
+
+        .submit-btn {
+            background-color: #2ecc71;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <h1 class="logo">Travel Explorer</h1>
+          <img
+            src="/images/menu-icon.png"
+            class="menu-icon"
+            onclick="menutoggle()"
+            width="30px"
+            alt="Menu"
+          />
+          <nav>
+            <ul id="nav-links" class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="beaches.html">Beaches</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="monuments.html">Monuments</a></li>
+              <li><a href="volcano.html">Volcanoes</a></li>
+              <li><a href="bucket-list.html">Bucket List</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html" class="active">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="question">Your Question</label>
+                <textarea id="question" name="question" placeholder="Ask your question about travel..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    <script>
+        function menutoggle() {
+          var MenuItems = document.getElementById("nav-links");
+          MenuItems.classList.toggle("nav-active");
+        }
+      </script>
+</body>
+</html>

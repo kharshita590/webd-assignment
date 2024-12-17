@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/destinations.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/volcano.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Travel Explorer</h1>
+      <img
+        src="/images/menu-icon.png"
+        class="menu-icon"
+        onclick="menutoggle()"
+        width="30px"
+        alt="Menu"
+      />
+      <nav>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="beaches.html">Beaches</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="monuments.html">Monuments</a></li>
+          <li><a href="volcano.html">Volcanoes</a></li>
+          <li><a href="bucket-list.html">Bucket List</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <section class="beaches-section">
+        <h1 class="section-title">Volcano</h1>
+        <div class="cards-container">
+       
+          <div class="card">
+            <img src="/images/v1.jpeg" alt="Maya Bay in Thailand" class="card-image">
+            <div class="card-tags">Asia Hiking Indonesia North Sulawesi</div>
+            <h2 class="card-title">Climbing Mount Karangetang Volcano In Siau, Sulawesi</h2>
+            <p class="card-description">
+              Mount Karangetang is an awesome Jurassic Park-looking volcano that dominates the remote island of Siau in North Sulawesi, Indonesia. You can’t go anywhere on tiny Siau island…
+            </p>
+            <a href="#" class="read-more">Read More &raquo;</a>
+          </div>  
+          <div class="card">
+            <img src="/images/v2.jpeg" alt="Fulidhoo Island in Maldives" class="card-image">
+            <div class="card-tags">Asia Bucket List East Java Indonesia</div>
+            <h2 class="card-title">Mount Bromo Volcano Sunrise In Indonesia (Travel Guide)</h2>
+            <p class="card-description">
+              Watching the sunrise at the Mount Bromo volcano in Indonesia is easily one of the most amazing travel experiences in the world. You can even climb the…
+            </p>
+            <a href="#" class="read-more">Read More &raquo;</a>
+          </div>  
+          <div class="card">
+            <img src="/images/v3.webp" alt="Dhigurah Island in Maldives" class="card-image">
+            <div class="card-tags">Central America El Salvador Hiking Lakes</div>
+            <h2 class="card-title">Santa Ana Volcano Hike In El Salvador (Ilamatepec)</h2>
+            <p class="card-description">
+              The Santa Ana volcano hike is one of El Salvador’s most amazing experiences, with a super colored crater lake that can change blue or green depending on…
+            </p>
+            <a href="#" class="read-more">Read More &raquo;</a>
+          </div>
+
+
+        </div>
+        <div class="cards-container">
+       
+            <div class="card">
+              <img src="/images/v4.jpeg" alt="Maya Bay in Thailand" class="card-image">
+              <div class="card-tags">Asia Central Java Hiking Indonesia</div>
+              <h2 class="card-title">Dieng Plateau In Java: Lakes, Sunrise & Volcanoes</h2>
+              <p class="card-description">
+                Dieng Plateau is a natural wonder tucked in the highlands of central Java, Indonesia, not too far from the city of Yogyakarta. This former caldera complex has…
+              </p>
+              <a href="#" class="read-more">Read More &raquo;</a>
+            </div>  
+            <div class="card">
+              <img src="/images/v5.jpeg" alt="Fulidhoo Island in Maldives" class="card-image">
+              <div class="card-tags">Asia Bali Bucket List East Java</div>
+              <h2 class="card-title">How To Visit Kawah Ijen – Volcano Lake & Blue Fire In Java
+              </h2>
+              <p class="card-description">
+                The Kawah Ijen volcano and crater lake is hands down one of the world’s most spectacular sights. Don’t leave Indonesia without seeing it, especially if you’re already…
+
+
+              </p>
+              <a href="#" class="read-more">Read More &raquo;</a>
+            </div>  
+            <div class="card">
+              <img src="/images/v6.jpeg" alt="Dhigurah Island in Maldives" class="card-image">
+              <div class="card-tags">Asia Bucket List Hiking Indonesia
+            </div>
+              <h2 class="card-title">Mount Dukono Volcano Hike In Maluku, Indonesia         </h2>
+              <p class="card-description">
+                Mount Dukono is one of the most active volcanoes in the world, and it’s been erupting non-stop since 1933. If you’re a hiker you can go see…
+               </p>
+              <a href="#" class="read-more">Read More &raquo;</a>
+            </div>
+  
+  
+          </div>
+
+
+
+      
+      </section>
+
+  
+     
+    
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Helping travelers explore the world since 2023</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: travelexplorer.com</p>
+                <p>Phone: 88888888</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+      function menutoggle() {
+        var MenuItems = document.getElementById("nav-links");
+        MenuItems.classList.toggle("nav-active");
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+.herosection-2 {
+    text-align: center;
+    background: url('/images/travel.jpeg') no-repeat center center/cover;
+    color: white;
+    padding: 12rem 6rem;
+    margin-top: 5rem;
+  }
+  
+  .herosection-2 h1 {
+    font-size: 2.5rem;
+  }
+  
+  main.content {
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .posts {
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 5rem;
+  }
+  
+  .posts article {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .posts article img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .posts article h2 {
+    font-size: 1.25rem;
+    padding: 12px;
+    margin: 0.5rem;
+  }
+  
+  .posts article p {
+    margin: 0.5rem;
+    padding: 12px;
+  }
+  
+  .posts article a {
+    display: block;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: #007bff;
+    padding: 12px;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    .menu-icon {
+      display: flex;
+      margin-top: -50px;
+      margin-left: 250px;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+      text-align: center;
+      
+    }
+  
+    .nav-links a {
+      color: #333;
+    }
+
+    .nav-links.nav-active {
+      display: flex;
+    }
+  }
+  
+
+  
+
+  
+  

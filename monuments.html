@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/destinations.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/monuments.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Travel Explorer</h1>
+      <img
+        src="/images/menu-icon.png"
+        class="menu-icon"
+        onclick="menutoggle()"
+        width="30px"
+        alt="Menu"
+      />
+      <nav>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="beaches.html">Beaches</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="monuments.html">Monuments</a></li>
+          <li><a href="volcano.html">Volcanoes</a></li>
+          <li><a href="bucket-list.html">Bucket List</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <section class="beaches-section">
+        <h1 class="section-title">Monuments</h1>
+        <div class="cards-container">
+       
+          <div class="card">
+            <img src="/images/m1.jpeg" alt="Maya Bay in Thailand" class="card-image">
+            <div class="card-tags">Belize Bucket List Central America Monuments</div>
+            <h2 class="card-title">Lamanai Ruins: The Mayan Mask Temple Of Belize            </h2>
+            <p class="card-description">
+                The Lamanai ruins in Belize are some of the most fascinating Mayan ruins in Central America, complete with a ‘Mask Temple’ that has giant stone faces carved…
+            </p>
+            <a href="#" class="read-more">Read More &raquo;</a>
+          </div>  
+          <div class="card">
+            <img src="/images/m2.jpeg" alt="Fulidhoo Island in Maldives" class="card-image">
+            <div class="card-tags">Central America Honduras Monuments Ruins</div>
+            <h2 class="card-title">Copan Ruinas: How To Visit The Mayan Ruins In Honduras            </h2>
+            <p class="card-description">
+                The ancient city of Copan was one of the most important cities for the Maya civilization in Central America, and today ‘Copan Ruinas’ is one of the…
+
+
+            </p>
+            <a href="#" class="read-more">Read More &raquo;</a>
+          </div>  
+          <div class="card">
+            <img src="/images/m3.webp" alt="Dhigurah Island in Maldives" class="card-image">
+            <div class="card-tags">Africa Bucket List Cairo Egypt</div>
+            <h2 class="card-title">How To Visit The Pyramids Of Giza & Sphinx In Egy</h2>
+            <p class="card-description">
+                What kind of bucket list doesn’t include the Great Pyramids of Giza in Egypt? Believe it or not, the Giza pyramids are fairly easy to visit on…
+            </p>
+            <a href="#" class="read-more">Read More &raquo;</a>
+          </div>
+
+
+        </div>
+
+        <div class="cards-container">
+       
+            <div class="card">
+              <img src="/images/m4.avif" alt="Maya Bay in Thailand" class="card-image">
+              <div class="card-tags">Bucket List Film Locations Hiking Jordan</div>
+              <h2 class="card-title">Petra Jordan Travel Guide: How To Visit The Lost City</h2>
+              <p class="card-description">
+                The lost city of Petra Jordan is one of the best places to visit in the Middle East. It’s relatively safe and affordable, and there are some…
+              </p>
+              <a href="#" class="read-more">Read More &raquo;</a>
+            </div>  
+            <div class="card">
+              <img src="/images/m5.jpeg" alt="Fulidhoo Island in Maldives" class="card-image">
+              <div class="card-tags">Belize Bucket List Film Locations Guatemala</div>
+              <h2 class="card-title">How To Visit The Tikal Mayan Ruins In Guatemala (+Map)            </h2>
+              <p class="card-description">
+                A visit to the Mayan ruins of Tikal Guatemala would have to be one of the most spectacular things you can do in Central America. Like something…
+              </p>
+              <a href="#" class="read-more">Read More &raquo;</a>
+            </div>  
+            <div class="card">
+              <img src="/images/m6.jpeg" alt="Dhigurah Island in Maldives" class="card-image">
+              <div class="card-tags">Africa Bucket List Egypt Luxor
+            </div>
+              <h2 class="card-title">Queen Hatshepsut Temple In Luxor Egypt: How To Visit            </h2>
+              <p class="card-description">
+                The Queen Hatshepsut Temple is one of the most spectacular ancient Egyptian monuments in Luxor. This desert tomb near the Valley of the Queens was one of…
+               </p>
+              <a href="#" class="read-more">Read More &raquo;</a>
+            </div>
+  
+  
+          </div>
+
+
+
+      
+      </section>
+
+  
+     
+    
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Helping travelers explore the world since 2023</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: travelexplorer.com</p>
+                <p>Phone: 88888888</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+      function menutoggle() {
+        var MenuItems = document.getElementById("nav-links");
+        MenuItems.classList.toggle("nav-active");
+      }
+    </script>
+</body>
+</html>

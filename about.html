@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Travel Explorer</title>
+    <link rel="stylesheet" href="/styles/about.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Travel Explorer</h1>
+        <img
+          src="/images/menu-icon.png"
+          class="menu-icon"
+          onclick="menutoggle()"
+          width="30px"
+          alt="Menu"
+        />
+        <nav>
+          <ul id="nav-links" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="beaches.html">Beaches</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="monuments.html">Monuments</a></li>
+            <li><a href="volcano.html">Volcanoes</a></li>
+            <li><a href="bucket-list.html">Bucket List</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="about-section">
+        <div class="overlay"></div>
+        <div class="container">
+          <h2>About Us</h2>
+          <p>
+            At <strong>Travel Explorer</strong>, we are passionate about helping
+            you discover the wonders of the world. From iconic landmarks to
+            hidden gems, we aim to provide the inspiration and tools you need to
+            embark on unforgettable journeys.
+          </p>
+          <p>
+            Our dedicated team of travel enthusiasts curates the best guides,
+            tips, and resources to make your adventures seamless and enjoyable.
+          </p>
+          <p>Join us as we explore the world, one destination at a time.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function menutoggle() {
+        var MenuItems = document.getElementById("nav-links");
+        MenuItems.classList.toggle("nav-active");
+      }
+    </script>
+  </body>
+</html>
